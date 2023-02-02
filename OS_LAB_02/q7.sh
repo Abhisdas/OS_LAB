@@ -1,13 +1,10 @@
-<<Question
-Write a program to find the area of Circle using Heron's Formula.
-Question
-
-echo "Enter the first side: "
-read a
-echo "Enter the second side: "
-read b
-echo "Enter the third side: "
-read c
-s=$(echo "($a + $b + $c) / 2 " | bc -l)
-area=$(echo "sqrt($s * ($s - $a) * ($s - $b) * ($s - $c))" | bc -l)
-echo "The area of the triangle is $area"
+<<question
+Write a Program to Find the area of triangle using heron's formula.
+question
+#!/bin/sh
+echo "Enter three sides of triangle (a,b,c): "
+read a b c
+s=$((($a+$b+$c)/2))
+peri=$(echo "scale=4; $s * ($s - $a)* ($s- $b)*($s- $c)" | bc)
+perim=$(echo "scale=4; sqrt($peri)" |bc)
+echo "The perimeter of the triangle by hereons formula is $perim"
