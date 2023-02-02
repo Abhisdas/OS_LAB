@@ -1,17 +1,17 @@
 <<Question
-Write a Program to try all the Syntaxes for Division Operation Using Bash.
+Write a Program to do all the Possible Syntax for division Operation.
 Question
 
 #!/bin/sh
-echo "Enter the Numbers Of Your Choice :-"
-read a b
-ans1= $((a/b))
-ans2= `expr $a / $b`
-ans3= `echo $a / $b || bc`
-ans4= `echo $a / $b |bc -l`
-ans5= $(echo "scale=4; $a / $b" |bc)
-echo "The Answer By 1st method is $ans1"
-echo "The Answer By 2nd method is $ans2"
-echo "The Answer By 3rd method is $ans3"
-echo "The Answer By 4th method is $ans4"
-echo "The Answer By 5th method is $ans5"
+echo "Enter the Numbers:-"
+read n1 n2
+ans1=$(( n1 / n2))
+ans2=`expr $n1 / $n2`
+ans3=`echo $n1 / $n2 |bc`
+ans4=`echo $n1 / $n2 |bc -l`
+ans5=$(echo "scale=4; $n1 / $n2" | bc)
+echo "The number by first method is: $ans1"
+echo "The number by second method is: $ans2"
+echo "The number by third method is: $ans3"
+echo "The number by fourth method is: $ans4"
+echo "The number by fifth method is: $ans5"

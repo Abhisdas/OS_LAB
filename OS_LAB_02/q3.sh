@@ -5,7 +5,7 @@ Question
 #!/bin/bash
 echo "Enter first number(A) Of Your Choice :"
 read a
-echo "Enter Second number(A) Of Your Choice :"
+echo "Enter Second number(B) Of Your Choice :"
 read b
 echo "__________________Before Swapping________________"
 #swapping

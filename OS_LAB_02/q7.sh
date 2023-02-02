@@ -8,6 +8,6 @@ echo "Enter the second side: "
 read b
 echo "Enter the third side: "
 read c
-s='echo "scale=4; ($a+$b+$c)/2" | bc'
-area='echo "sqrt($s*($s-$a)*($s-$b)*($s-$c))" | bc'
+s=$(echo "($a + $b + $c) / 2 " | bc -l)
+area=$(echo "sqrt($s * ($s - $a) * ($s - $b) * ($s - $c))" | bc -l)
 echo "The area of the triangle is $area"
