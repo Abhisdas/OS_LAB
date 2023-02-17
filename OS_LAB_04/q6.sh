@@ -1,3 +1,7 @@
+<< Question
+write a program in shell scripting to take array as input from the user and print it in reverse order.
+Question
+
 #!/bin/bash
 
 echo "Enter the size of the array: "

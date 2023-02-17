@@ -1,3 +1,9 @@
+<< Question
+write a program in shell scripting using switch case to take number input from the user and find 
+whether the number is palindrome number or not.
+
+Question
+
 #!/bin/bash
 
 echo "Enter a number: "
