@@ -1,10 +1,13 @@
+<< Question
+write a program in shell scripting to take number input from the user and display it in word.
+Question
+
 #!/bin/bash
 
 echo "Enter a number: "
 read num
 
 digits=('zero' 'one' 'two' 'three' 'four' 'five' 'six' 'seven' 'eight' 'nine')
-
 thousands=$((num / 1000))
 num=$((num % 1000))
 hundreds=$((num / 100))
