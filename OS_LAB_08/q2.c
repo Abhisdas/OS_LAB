@@ -28,7 +28,8 @@ int main() {
 
 pthread_t tid;
 
-pthread_create(&tid, NULL, print_array, array); pthread_join(tid, NULL);
+pthread_create(&tid, NULL, print_array, array); 
+pthread_join(tid, NULL);
 
 return 0;
 
